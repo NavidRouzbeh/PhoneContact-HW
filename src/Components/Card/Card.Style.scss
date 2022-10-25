@@ -1,0 +1,76 @@
+
+.searchBox{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    input{
+        width: 70%;
+        height: auto;
+        padding: 8px 15px;
+        border: 0;
+        border-radius: 15px;
+        background-color: #EEEEEE;
+        box-shadow: 2px 3px 7px #AEAEAE;
+    }
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.avatar{
+    display: flex;
+    width: 20%;
+    gap: 12px;
+}
+
+.contactInfo{
+    display: flex;
+    width: 50%;
+    padding-left: 20px;
+    flex-direction: column;
+}
+
+.fav{
+    width: 10%;
+}
+
+.contactName{
+    display: flex;
+    p{
+        margin: 0;
+    }
+}
+
+.buttonContainer{
+    width: 20%;
+    button{
+        margin: 0 5px;
+    }
+}
+
+.button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.favoriteButton{
+    display: none;
+}
+
+@media only screen and (min-width: 400px) {
+    .favoriteButton{
+        display: flex;
+    }
+    
+    .searchBox{
+        input{
+            max-width: 700px;
+        }
+    }
+    
+}
